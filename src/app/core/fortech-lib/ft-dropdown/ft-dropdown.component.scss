@@ -1,0 +1,18 @@
+@import '../variables.scss';
+
+.container-dropdown{
+  height: 100%;
+}
+
+.container-check{
+  padding: 0.5rem;
+  border-radius: $border-radius;
+  background: var(--Components-Static-Icons-Soft-Blue-Bg-Color, rgba(219, 234, 254, 1));
+}
+
+.container-lock{
+  padding: 0.5rem;
+  border-radius: $border-radius;
+  border: 1px solid var(--Components-Static-Icons-White-Border-Color, rgba(229, 231, 235, 1))
+}
+

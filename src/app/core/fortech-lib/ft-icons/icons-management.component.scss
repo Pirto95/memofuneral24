@@ -1,0 +1,16 @@
+@import '../variables.scss';
+
+.icon {
+    & path {
+        stroke: $text-color;
+        stroke-width:1.2;
+        stroke-linecap:round;
+        stroke-linejoin:round;
+    }
+    &.selected path{
+        stroke:$fortech-600;
+    }
+    &.disabled path{
+      stroke:rgba(107, 114, 128, 1);
+  }
+}

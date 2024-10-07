@@ -1,0 +1,22 @@
+@import './variables.scss';
+@import '../app/core/fortech-lib/style-lib.scss';
+
+@import './fonts.scss';
+
+
+html {
+    font-size: 12px;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  }
+
+body, p, h1, h2, h3, h4, h5, h6, a, div, span {
+  font-family: "Inter", sans-serif;
+    color:$text-color;
+  }
+
+  .p-card-content{
+    padding : 0
+  }

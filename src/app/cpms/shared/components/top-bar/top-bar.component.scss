@@ -1,0 +1,19 @@
+.container-top-bar
+{
+  height: 46px;
+}
+
+.menu{
+  display: flex;
+  justify-content: space-between;
+
+  .navigate-menu{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  & button{
+    border-radius: 4px;
+  }
+}

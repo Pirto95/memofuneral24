@@ -1,0 +1,6 @@
+<div class="nav-bar-section">
+    <ft-nav-list [items]="navbarItems().menu" [routeActive]="routeActive()" (route)="changeRoute($event)"></ft-nav-list>
+    @if(navbarItems().submenu){
+        <ft-listbox [options]="navbarItems().submenu" [isGroup]="true" (elementSelected)="changeRoute($event)"></ft-listbox>
+    }
+</div>

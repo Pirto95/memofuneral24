@@ -1,0 +1,41 @@
+<p-table
+    [value]="tableData().rows"
+    [(selection)]="selectedTable"
+    [paginator]="true"
+    [rows]="5"
+    [rowsPerPageOptions]="[5 , 10, 20]"
+    [tableStyle]="{ 'width': '100%' }"
+    [showCurrentPageReport]="true"
+    currentPageReportTemplate = {{placeholder()}}
+    >
+        <ng-template pTemplate="header">
+            <tr>
+                <th style="width: 50px; background-color: unset;">
+                  <!-- checkbox nell'header che permette di selezionare o deselezionare tutte le righe della tabella. -->
+                    <p-tableHeaderCheckbox />
+                </th>
+                @for(col of tableData().columns; track col.field){
+                    @if(col.header !== "Selezionato"){
+                        <th>
+                            {{ col.header }}
+                        </th>
+                    }
+                }
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-rowData>
+            <tr>
+                <td>
+                  <!-- checkbox per selezionare singole righe della tabella. -->
+                    <p-tableCheckbox [value]="rowData" />
+                </td>
+                @for(col of tableData().columns; track col.field ){
+                  @if(col.header !== "Selezionato"){
+                    <td >{{ rowData[col.field] }} </td>
+                  }
+                } @empty {
+                    Lista Vuota
+                }
+            </tr>
+        </ng-template>
+</p-table>

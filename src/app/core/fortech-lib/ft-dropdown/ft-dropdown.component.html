@@ -1,0 +1,26 @@
+<div class="container-dropdown">
+  <p-dropdown [options]="itemDropdown()"
+  [(ngModel)]="infoSelected"
+  placeholder="eMSP">
+    <ng-template let-options pTemplate="item">
+      <div class="d-flex justify-content-between gap-3">
+        <div>
+          <div class="fw-bold">{{options.label }}</div>
+          <div>{{options.description | translate}}</div>
+        </div>
+        <div class="d-flex align-self-center">
+          @if(options.disabled){
+            <div class="container-lock">
+              <ft-icons [iconName]="'lock'"></ft-icons>
+            </div>
+          }
+          @else {
+          <div class="container-check">
+            <ft-icons [iconName]="'check'"></ft-icons>
+          </div>
+          }
+          </div>
+      </div>
+    </ng-template>
+  </p-dropdown>
+</div>

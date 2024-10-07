@@ -1,0 +1,459 @@
+//style globale di tutti i componenti che inseriamo nella libreria
+
+ft-listbox {
+  .p-listbox {
+    background: unset;
+    color: #495057;
+    border: unset;
+    border-radius: unset;
+
+    .p-listbox-list-wrapper {
+      padding: 10px;
+      max-height: none !important;
+      & ul {
+        padding-left: 0;
+      }
+    }
+
+    & .p-listbox-item-group {
+      margin: 0;
+      padding: 0.75rem 1rem;
+      background: unset;
+      // white-space: normal;
+      font-family: Inter;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 16px;
+      letter-spacing: 0.005em;
+      text-align: left;
+      color: rgba(107, 114, 128, 1);
+    }
+
+    .p-listbox-item {
+      flex-direction: column;
+      align-items: normal !important;
+      margin: 0;
+      padding: 0;
+      border: 0 none;
+      border-radius: 0;
+      white-space: normal;
+      cursor: default;
+      font-family: "Inter", sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0.005em;
+      text-align: left;
+
+      & .p-divider.p-divider-horizontal {
+        margin: 2px 0 3px 0;
+      }
+
+      &.p-highlight {
+        color: unset;
+        background: unset;
+      }
+
+      & .list-item {
+        padding: 0.5rem 1rem;
+        width: 100%;
+
+        &:not(.disabled) {
+          cursor: pointer;
+        }
+
+        &:not(.disabled):hover {
+          background-color: #e9e9e9;
+          cursor: pointer;
+          border-radius: $border-radius;
+        }
+
+        &.disabled {
+          opacity: 0.5;
+          pointer-events: none;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+  .p-listbox:not(.p-disabled)
+    .p-listbox-item:not(.p-highlight):not(.p-disabled):hover {
+    color: unset;
+    background: unset;
+  }
+}
+
+.p-overlaypanel {
+  // Gestisco l'apertura dei panelli dal component
+  border-radius: $border-radius;
+  max-width: 25%;
+  margin-top: 1.5rem !important; //spazio l' apertura del panel dal componente
+  &::before,
+  &::after {
+    display: none;
+  }
+}
+
+.p-overlay-content {
+  // Spazio tra i component che click e il panel che aprono
+  padding: 1rem 0rem;
+}
+
+ft-dropdown {
+  .p-dropdown {
+    min-height: 46px;
+    border-radius: $border-radius;
+    border: none;
+
+    .p-dropdown-panel {
+      // modifiche del pannello
+      border-radius: $border-radius;
+      padding: 10px;
+      width: 300px;
+    }
+
+    .p-dropdown-item {
+      // Modifiche degli elementi DENTRO il panel
+      border-radius: $border-radius;
+      background: none;
+      font-weight: 500;
+      white-space: normal;
+
+      &:hover {
+        background-color: rgba(43, 79, 72, 0.1);
+        border-radius: $border-radius;
+      }
+    }
+
+    ul {
+      //tolgo lo style predefinito che mi mette primeng
+      margin-bottom: 0;
+      padding-left: 0px !important;
+    }
+
+    .p-inputtext {
+      //Modifiche del testo FUORI dal panel
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Inter;
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 18.15px;
+      letter-spacing: 0.005em;
+      text-align: center;
+    }
+  }
+}
+
+ft-autocomplete {
+  width: 100%;
+
+  p-autocomplete {
+    width: 100%;
+
+    .p-autocomplete {
+      min-height: 46px;
+      width: 100%;
+
+      .p-element .p-inputwrapper .p-autocomplete-clearable {
+        width: 100% !important;
+      }
+
+      .p-autocomplete-input {
+        // Modifiche della barra di ricerca
+        background-color: #f8f8f8;
+        border: none;
+        border-radius: $border-radius;
+        padding-left: 50px;
+        width: 100%;
+      }
+
+      .p-autocomplete-clear-icon {
+        //Posizione l'icona del ShowClear al posto della lente quando cambia il testo
+        left: 0;
+        width: 46px;
+        height: 1.2rem;
+      }
+
+      .p-autocomplete-panel {
+        // Modifiche del Panel dei suggerimenti barra di ricerca
+        padding: 1rem !important;
+        max-height: 300px !important;
+        border-radius: $border-radius;
+
+        .p-autocomplete-item {
+          padding: 1rem;
+          &:hover {
+            background-color: #e9e9e9;
+            border-radius: $border-radius;
+          }
+        }
+      }
+    }
+
+    ul {
+      //tolgo lo style predefinito che mi mette primeng
+      margin-bottom: 0;
+      padding-left: 0px !important;
+    }
+
+    .p-divider.p-divider-horizontal {
+      margin: 0 !important;
+    }
+  }
+}
+
+ft-chip {
+  .p-chip {
+    cursor: pointer;
+    min-height: 46px;
+    border-radius: 50rem;
+
+    .user-typology {
+      // Grandezza del ruolo dello user
+      width: 100%;
+      height: 100%;
+      border-radius: 0px;
+    }
+
+    .user-image {
+      //Grandezza icona foto profilo
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+ft-menu {
+  .p-menu {
+    width: 100%;
+    height: auto;
+    // padding: 1rem 0rem;
+    border-radius: $border-radius;
+    border: none;
+
+    .p-menuitem-content {
+      &:hover {
+        width: 100%;
+        background-color: #e9e9e9;
+        cursor: pointer;
+        border-radius: $border-radius;
+      }
+    }
+
+    ul {
+      //tolgo lo style predefinito che mi mette primeng
+      padding-left: 0px !important;
+      margin-bottom: 0;
+    }
+  }
+}
+
+  p-card {
+    &.disabled {
+      // border: 1.5px solid;
+      opacity: 0.5;
+      pointer-events: none;
+      cursor: not-allowed;
+    }
+  }
+  .p-card {
+    box-shadow: none;
+    font-size: 16px;
+    border-radius: 16px;
+    cursor: pointer;
+    box-shadow: none;
+
+    & .p-card-body {
+      padding: 0;
+    }
+
+    & .p-card-content {
+
+      & p {
+        text-transform: capitalize; // Mette la prima lettera maiuscola
+        font-size: 12px;
+        font-weight: 400;
+      }
+    }
+  }
+
+ft-table {
+  .p-checkbox .p-checkbox-box {
+    background-color: unset;
+    border: 1px solid rgba(229, 231, 235, 1);
+    border-radius: 6px;
+
+    &.p-highlight {
+      background-color: unset;
+      border: 1px solid rgba(229, 231, 235, 1);
+      border-radius: 4px;
+
+      & checkicon {
+        border-bottom: none;
+
+        & svg {
+          color: black;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  tr.ng-star-inserted {
+    background-color: unset;
+    border-bottom: 1px solid rgba(229, 231, 235, 1);
+
+    & th {
+      background-color: unset;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 16px;
+      letter-spacing: 0.5%;
+      text-transform: uppercase;
+    }
+    & td {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0.5%;
+    }
+  }
+
+  p-paginator {
+    .p-paginator{
+      justify-content: end;
+
+      .p-paginator-pages .ng-star-inserted {
+        //il cerchio azzurro del numero di pagina
+        border-radius: 50%;
+      }
+      .p-dropdown {
+        padding: 0.25rem;
+        border-radius: 10px;
+        height: auto !important;
+
+        .p-dropdown-items {
+          padding: 0.5rem;
+          margin-bottom: 0;
+
+          p-dropdownitem {
+            .p-dropdown-item {
+              //margine dentro il menu a tendina
+              border-radius: 10px;
+              margin-bottom: 0.25rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+ft-filters {
+  .filterDropdown .p-dropdown {
+    border-width: 1.5px;
+    border-color: rgba(229, 231, 235, 1);
+    border-style: dashed;
+    border-radius: 50rem;
+    padding: 0px 10px;
+    flex-direction: row-reverse;
+
+    & .p-inputtext {
+      line-height: 16px;
+      letter-spacing: 0.5%;
+      font-weight: 500;
+      font-size: 12px;
+      padding: 0.5rem 0.75rem;
+    }
+
+    & div.p-dropdown-trigger {
+      width: unset;
+    }
+  }
+
+  .p-dropdown-panel {
+    width: 20rem;
+    border-radius: 8px;
+    .p-dropdown-header{
+      border-radius: 8px;
+      background-color: white;
+      padding: 0.5rem 0.5rem 0rem 0.5rem;
+
+      .p-dropdown-filter-container {
+        .p-inputtext{
+          //Per modificare il contenuto della barra di ricerca
+          border: none;
+          background-color:rgba(243, 244, 246, 1);
+          border-radius: 8px;
+        }
+        .p-dropdown-filter-icon {
+          //per togliere la lenti di ingrandimento dal cerca del filtro
+          display: none;
+        }
+      }
+    }
+  }
+
+  .p-dropdown-items-wrapper {
+    & ul.p-dropdown-items {
+      margin: 0;
+      padding: 0.75rem;
+
+      & .p-dropdown-item {
+        border-radius: 8px;
+        padding: 0.5rem 1.25rem;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0.005em;
+        text-align: left;
+
+        &:not(.p-highlight):not(.p-disabled).p-focus {
+          background: rgba(243, 244, 246, 1);
+        }
+      }
+    }
+  }
+
+  // BOTTONE PER CANCELLARE I FILTRI
+  .button-primeng .p-button-icon-only {
+    border-radius: 10px;
+    margin: 4px;
+    padding: 4px;
+    height: 45px;
+    width: 45px;
+    color: black;
+    border: none;
+    background-color: rgba(43, 79, 72, 0.1);
+    &:hover {
+      background-color: rgba(43, 79, 72, 0.3);
+    }
+  }
+
+  .button-primeng.reset-filers .p-button-icon-only {
+    height: 30px;
+    margin: 0;
+  }
+
+  .button-primeng.reset-filers .p-button-icon-only {
+    height: 30px;
+    margin: 0;
+  }
+}
+
+.p-button {
+  .p-button-label {
+    color: white;
+  }
+
+  span{
+    color: white;
+  }
+}
+
+.p-togglebutton.p-button:not(.p-highlight) span{
+
+  color: black;
+}

@@ -1,0 +1,34 @@
+  <p-listbox
+      [options]="options()"
+      [group]="isGroup()"
+      (onClick)="selectElement($event)"
+      [style]="{ width: '100%' }">
+        @if(isGroup()){
+          <ng-template let-group pTemplate="group">
+              <div class="flex align-items-center">
+                  <span>{{ group.label | translate}}</span>
+              </div>
+          </ng-template>
+        }
+          <ng-template let-option pTemplate="item">
+            <div class="d-flex align-items-center gap-3 list-item" [class.disabled]="option.disabled">
+                @if(option?.icon){
+                  <span [innerHTML]="sanitizeHtml(option.icon)"></span>
+                }
+                <div>{{ option.label | translate}}</div>
+            </div>
+            @if(!isGroup()){
+              <p-divider type="solid" />
+            }
+          </ng-template>
+        @if(!isGroup()){
+            <ng-template pTemplate="footer">
+              <div class="footer-container m-2 text-center">
+                <a href="LINKDAINSERIRE" class="footer-text">
+                  {{'ft-listbox.footer' | translate}}
+                </a>
+              </div>
+            </ng-template>
+        }
+  </p-listbox>
+

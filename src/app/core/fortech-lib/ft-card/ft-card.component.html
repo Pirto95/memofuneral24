@@ -1,0 +1,22 @@
+<p-card [class.disabled]="cardItems().disabled">
+  <div class=" d-flex justify-content-between">
+    <div class="d-flex align-items-center gap-3">
+      @if(cardItems().isPresentImage){
+        <div class="container-icon-card d-flex justify-content-center ms-2">
+          <ft-icons [iconName]="cardItems().icon"></ft-icons>
+        </div>
+      }
+      <div>
+        <div class="fw-bold">{{cardItems().header | translate}}</div>
+        <p class="m-0">
+          {{ cardItems().fields | translate }}
+        </p>
+      </div>
+    </div>
+    @if(cardItems().disabled){
+      <div class="d-flex align-items-center pe-5">
+        <ft-icons [iconName]="'lock'" [disabled]="true"></ft-icons>
+      </div>
+    }
+  </div>
+</p-card>

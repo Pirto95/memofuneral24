@@ -1,0 +1,29 @@
+<!-- RIGUARDARE ANGULAR PRELINE TEMPLATE -->
+<div class="d-flex gap-2 pb-4">
+  <p-button class="button-primeng reset-filers" (onClick)="clearFilters()" icon="pi pi-trash" />
+
+  @for(filter of options(); track filter.label){
+    <p-dropdown
+      [options]="filter.value"
+      [(ngModel)]="filter.filter"
+      [filter]="true"
+      filterBy="value"
+      [filterPlaceholder]=" filter.placeholder | translate"
+      [className]="'filterDropdown'"
+      [placeholder]="filter.label">
+      <ng-template pTemplate="dropdownicon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+          <path d="M2.5 6H9.5" stroke="#6B7280" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M6 2.5V9.5" stroke="#6B7280" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </ng-template>
+      <ng-template pTemplate="item" let-option>
+        <div class="d-flex justify-content-between">
+          <div>{{ option.label}}</div>
+          <p-checkbox
+            [(ngModel)]="checked" [binary]="true" inputId="binary" />
+        </div>
+      </ng-template>
+    </p-dropdown>
+  }
+</div>

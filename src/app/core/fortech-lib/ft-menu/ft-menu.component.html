@@ -1,0 +1,31 @@
+<p-menu [model]="dataMenu()">
+  <ng-template pTemplate="start">
+    <div class="d-flex justify-content-between p-3">
+      <div class="inline-flex align-items-start">
+        <div class="fw-bold ">
+          {{dataSettingProfile()?.name}}
+          {{dataSettingProfile()?.surname}}
+        </div>
+        <div class="text-sm-start">
+          {{dataSettingProfile()?.info?.label + " | " + dataSettingProfile()?.info?.location}}
+        </div>
+      </div>
+      <ft-icons [iconName]="'close'" (click)="closeMenu($event)" style="cursor: pointer;"></ft-icons>
+    </div>
+  </ng-template>
+  <ng-template pTemplate="item" let-items>
+    <div class="d-flex flex-column p-3 fw-semibold">
+       <div >
+        @if(items.type === "logout"){
+            <div style="color: red;">
+              {{ items.label | translate}}
+            </div>
+        } @else {
+          <div>{{ items.label | translate}}</div>
+        }
+      </div>
+    </div>
+
+  </ng-template>
+</p-menu>
+

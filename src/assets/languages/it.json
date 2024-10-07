@@ -1,0 +1,60 @@
+{
+  "ft-navbar": {
+    "panoramica": "Panoramica",
+    "tariffe": "Tariffe",
+    "sessioni": "Sessioni",
+    "location": "Locations",
+    "altro": "Altro"
+  },
+  "ft-listbox": {
+    "recenti": {
+      "recenti": "Recenti",
+      "panoramica": "Panoramica",
+      "tariffe": "Tariffe",
+      "sessioni": "Sessioni"
+    },
+    "erroreColonna": "La colonna IT-1233456 è in stato di errore",
+    "createReport": "Abbiamo generato il tuo report, è disponibile nella sezione documenti",
+    "sbloccaConnettore": "Il connettore IT-2764543 è stato sbloccato in modo manuale",
+    "nonDisponibileLocation": "BeCharge al momento non è disponibile per le tue location",
+    "footer": "Mostra tutte"
+  },
+  "ft-dropdown": {
+    "descrizioneEMSP": "Servizi di mobilità elettrica e gestione degli utenti",
+    "descrizioneCPO": "Gestione e operatività delle infrastrutture di ricarica"
+  },
+  "ft-autocomplete": {
+    "location": "Locations",
+    "sessione": "Sessione",
+    "tariffa": "Tariffa",
+    "placeholder": "Cerca una location, una sessione o altro...",
+    "footer": "Non trovi quello che ti serve?"
+  },
+  "ft-menu": {
+    "area": "Area Riservata",
+    "impostazioni": "Impostazioni",
+    "esci": "Esci"
+  },
+  "ft-filters": {
+    "filterPlaceholder": {
+      "Paese": "Cerca un paese...",
+      "Regione": "Cerca un regione...",
+      "Provincia": "Cerca un provincia...",
+      "Comune": "Cerca un comune...",
+      "Tariffa": "Cerca un tariffa...",
+      "Connettore": "Cerca un connettore..."
+    }
+  },
+  "ft-card" : {
+    "headerTariffe" : "Applica le tariffe",
+    "fieldsTariffe" : "Scopri come applicare le tariffe sui tuoi impianti",
+    "headerImpianti" : "Crea gruppi di impianti"
+  },
+  "ft-table" : {
+    "paginator" : "Mostra {first} su {last} di {totalRecords} elementi"
+  },
+  "Location" : {
+    "title" : "Location"
+  }
+
+}

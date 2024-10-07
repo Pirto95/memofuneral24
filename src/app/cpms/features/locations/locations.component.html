@@ -1,0 +1,18 @@
+<div class="col-12 p-5 pt-0">
+<div class="fw-bold" style="font-size: 24px;">{{'Location.title' | translate}}</div>
+  <div class="row d-flex">
+    @for(card of cardData(); track card){
+      <div class="col-6 py-5">
+        <ft-card [cardItems]="card" ></ft-card>
+      </div>
+    }
+  </div>
+  <div>
+    <ft-filters [options]="filterData()"></ft-filters>
+    <p-divider />
+      <div class="col-6 py-5" style="width: 100%;">
+        <ft-table [tableData]="tableData()" [placeholder]="'ft-table.paginator' | translate"></ft-table>
+      </div>
+
+  </div>
+</div>

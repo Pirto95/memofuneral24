@@ -1,0 +1,42 @@
+<div class="container-autocomplete position-relative">
+  @if(!inputSelected()){
+    <ft-icons class="containter-icon-bar position-absolute" [iconName]="'search'" [disabled]="true"></ft-icons>
+  }
+  <p-autoComplete
+    [(ngModel)]="inputSelected"
+    [suggestions]="suggestionsList()"
+    (completeMethod)="filterSearch($event)"
+    [showClear]="true"
+    [placeholder]="placeholder()"
+    >
+    <ng-template let-option pTemplate="item">
+      <div class="d-flex align-items-start justify-content-between gap-3">
+          <!-- Nome del suggerimento  -->
+          <div>{{ option.label}}</div>
+
+          <div class="d-flex">
+            <div class="pe-2">
+              <!-- icona del suggerimento in base alla tipologia -->
+              @if(option.section.icon){
+                <ft-icons [iconName]="option.section.icon" [disabled]="true"></ft-icons>
+              }
+            </div>
+            <!-- tipologia del suggerimento -->
+            <div>{{option.section.section | translate}}</div>
+          </div>
+
+        </div>
+    </ng-template>
+    <ng-template pTemplate="footer">
+      <div class="d-flex flex-column ">
+        <p-divider />
+        <div class="text-center container-footer">
+          <a href="LINKDAINSERIRE" class="footer-text ">
+            {{'ft-autocomplete.footer' | translate}}
+          </a>
+        </div>
+      </div>
+
+    </ng-template>
+  </p-autoComplete>
+</div>

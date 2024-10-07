@@ -1,0 +1,51 @@
+@import '../../../styles/variables.scss';
+
+// Color palette
+$primary-color: rgba(110, 148, 140, 1);
+$secondary-color: #6c757d;
+$success-color: #28a745;
+$info-color: #17a2b8;
+$warning-color: #ffc107;
+$danger-color: #dc3545;
+$light-color: #f8f9fa;
+$dark-color: #343a40;
+$text-color:rgba(31, 41, 55, 1);
+
+// Font settings
+$font-family-base: "Inter", sans-serif;
+$font-size-base: 1rem;
+$font-weight-normal: 400;
+$line-height-base: 1.5;
+
+// Spacing
+$spacer: 1rem;
+$spacer-0: 0;
+$spacer-1: 0.25rem;
+$spacer-2: 0.5rem;
+$spacer-3: 1rem;
+$spacer-4: 1.5rem;
+$spacer-5: 3rem;
+
+// Border radius
+$border-radius: 10px;
+$border-radius-lg: 0.3rem;
+$border-radius-sm: 0.2rem;
+
+// PrimeNG overrides
+// :root {
+//     --primary-color: #{$primary-color};
+//     --primary-light-color: #{$primary-light-color};
+//     --primary-dark-color: #{$primary-dark-color};
+//     --primary-text-color: #{$primary-text-color};
+  
+//     --input-border-color: #{$input-border-color};
+//     --input-border-radius: #{$input-border-radius};
+//     --input-background-color: #{$input-background-color};
+//     --input-text-color: #{$input-text-color};
+  
+//     --button-border-radius: #{$button-border-radius};
+//     --button-padding: #{$button-padding};
+//     --button-primary-background: #{$button-primary-background};
+//     --button-primary-border: #{$button-primary-border};
+//     --button-primary-text: #{$button-primary-text};
+//   }

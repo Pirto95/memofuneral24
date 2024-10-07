@@ -1,0 +1,59 @@
+{
+  "ft-navbar": {
+    "panoramica": "Overview",
+    "tariffe": "Rates",
+    "sessioni": "Sessions",
+    "location": "Location",
+    "altro": "Other"
+  },
+  "ft-listbox": {
+    "recenti": {
+      "recenti": "Recent",
+      "panoramica": "Overview",
+      "tariffe": "Rates",
+      "sessioni": "Sessions"
+    },
+    "erroreColonna": "Column IT-1233456 is in error state",
+    "createReport": "We have generated your report, it is available in the documents section",
+    "sbloccaConnettore": "The IT-2764543 connector was unlocked manually",
+    "nonDisponibileLocation": "BeCharge is currently not available for your locations",
+    "footer": "Show all"
+  },
+  "ft-dropdown": {
+    "descrizioneEMSP": "Electric mobility services and user management",
+    "descrizioneCPO": "Management and operation of charging infrastructure"
+  },
+  "ft-autocomplete": {
+    "location": "Location",
+    "sessione": "Session",
+    "tariffa": "Rate",
+    "placeholder": "Search for a location, a session or other...",
+    "footer": "Can't find what you need?"
+  },
+  "ft-menu": {
+    "area": "Reserved Area",
+    "impostazioni": "Settings",
+    "esci": "Exit"
+  },
+  "ft-filters": {
+    "filterPlaceholder": {
+      "Paese": "Search for a country...",
+      "Regione": "Search for a region...",
+      "Provincia": "Search for a province...",
+      "Comune": "Search for a municipality...",
+      "Tariffa": "Search for a rate...",
+      "Connettore": "Search for a connector..."
+    }
+  },
+  "ft-card" : {
+    "headerTariffe" : "Apply rates",
+    "fieldsTariffe" : "Find out how to apply tariffs to your systems",
+    "headerImpianti" : "Create plant groups"
+  },
+  "ft-table" : {
+    "paginator" : "Showing {first} to {last} of {totalRecords} entries"
+  },
+  "Location" : {
+    "title" : "Location"
+  }
+}

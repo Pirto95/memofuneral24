@@ -1,0 +1,24 @@
+<ul class="sidebar">
+  @for(item of items(); track item){
+    <li [class.active]="item.link === routeActive() " [class.disabled]="item.disabled">
+      <a (click)="routeSelected(item.link)" [class.disabled]="item.disabled">
+        <div class="list-nav-bar d-flex flex-row justify-content-between col-12">
+          <div class="d-flex flex-row gap-2 align-items-center">
+            @if(item.icon){
+              <ft-icons [iconName]="item.icon" [selected]="item.link === routeActive() "></ft-icons>
+            }
+            <span class="title">{{item.label | translate}}</span>
+            @if(item.badge){
+              <span class="badge">{{item.badge}}</span>
+            }
+          </div>
+          @if(item.disabled){
+            <div class="d-flex align-items-center">
+              <ft-icons [iconName]="'lock'" ></ft-icons>
+            </div>
+          }
+        </div>
+      </a>
+    </li>
+  }
+</ul>

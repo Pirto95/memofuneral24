@@ -1,0 +1,17 @@
+<div class="login-container ">
+    <div class="login-panel col-5">
+      <p-card header="Login">
+        <div class="p-fluid">
+          <div class="p-field">
+            <label class="me-2" for="username">Username </label>
+            <input id="username" type="email" pInputText [(ngModel)]="email" />
+          </div>
+          <div class="p-field">
+            <label class="me-2"for="password">Password </label>
+            <input id="password" type="password" pInputText [(ngModel)]="password" />
+          </div>
+          <p-button label="Login" icon="pi pi-sign-in" (click)="login()"></p-button>
+        </div>
+      </p-card>
+    </div>
+  </div>

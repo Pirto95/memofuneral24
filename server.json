@@ -1,0 +1,373 @@
+{
+  "nevbar": {
+    "menu": [
+      {
+        "icon": "home",
+        "label": "ft-navbar.panoramica",
+        "link": "panoramica",
+        "disabled": false
+      },
+      {
+        "icon": "lightning",
+        "label": "ft-navbar.location",
+        "link": "locations",
+        "badge": 25,
+        "disabled": false
+      },
+      {
+        "icon": "sessions",
+        "label": "ft-navbar.sessioni",
+        "link": "sessioni",
+        "disabled": false
+      },
+      {
+        "icon": "euro",
+        "label": "ft-navbar.tariffe",
+        "link": "tariffe",
+        "disabled": false
+      },
+      {
+        "icon": "plus",
+        "label": "ft-navbar.altro",
+        "link": "altro",
+        "disabled": true
+      }
+    ],
+    "submenu": [
+      {
+        "label": "ft-listbox.recenti.recenti",
+        "value": "recent",
+        "items": [
+          {
+            "label": "ft-listbox.recenti.panoramica",
+            "value": "panoramica",
+            "disabled": false
+          },
+          {
+            "label": "ft-listbox.recenti.tariffe",
+            "value": "tariffe",
+            "disabled": false
+          },
+          {
+            "label": "ft-listbox.recenti.sessioni",
+            "value": "sessioni",
+            "disabled": true
+          }
+        ]
+      }
+    ]
+  },
+  "dropdownOptionseMSP": [
+    {
+      "label": "eMSP",
+      "value": "emsp",
+      "description": "ft-dropdown.descrizioneEMSP",
+      "disabled": false
+    },
+    {
+      "label": "CPO",
+      "value": "cpo",
+      "description": "ft-dropdown.descrizioneCPO",
+      "disabled": true
+    }
+  ],
+  "autocompleteList": [
+    {
+      "label": "Atlante Energia - Torino",
+      "section": {
+        "icon": "location",
+        "section": "ft-autocomplete.location"
+      }
+    },
+    {
+      "label": "865174252 - d1b4943a - f9fb17198 - f27771",
+      "section": {
+        "icon": "sessions",
+        "section": "ft-autocomplete.sessione"
+      }
+    },
+    {
+      "label": "865174252 - d1b4943a - f9fb17198 - f27771",
+      "section": {
+        "icon": "sessions",
+        "section": "ft-autocomplete.sessione"
+      }
+    },
+    {
+      "label": "865174252 - d1b4943a - f9fb17198 - f27771",
+      "section": {
+        "icon": "sessions",
+        "section": "ft-autocomplete.sessione"
+      }
+    },
+    {
+      "label": "865174252 - d1b4943a - f9fb17198 - f27771",
+      "section": {
+        "icon": "sessions",
+        "section": "ft-autocomplete.sessione"
+      }
+    },
+    {
+      "label": "865174252 - d1b4943a - f9fb17198 - f27771",
+      "section": {
+        "icon": "sessions",
+        "section": "ft-autocomplete.sessione"
+      }
+    },
+    {
+      "label": "Tariffa Type 2 Atlante",
+      "section": {
+        "icon": "rate",
+        "section": "ft-autocomplete.tariffa"
+      }
+    }
+  ],
+  "listboxItem": [
+    {
+      "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"22\" height=\"20\" viewBox=\"0 0 22 20\" fill=\"none\"><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M11.9998 7.99999V12M11.9998 16H12.0098M10.6151 2.89171L2.39019 17.0983C1.93398 17.8863 1.70588 18.2803 1.73959 18.6037C1.769 18.8857 1.91677 19.142 2.14613 19.3088C2.40908 19.5 2.86435 19.5 3.77487 19.5H20.2246C21.1352 19.5 21.5904 19.5 21.8534 19.3088C22.0827 19.142 22.2305 18.8857 22.2599 18.6037C22.2936 18.2803 22.0655 17.8863 21.6093 17.0983L13.3844 2.89171C12.9299 2.10654 12.7026 1.71396 12.4061 1.58211C12.1474 1.4671 11.8521 1.4671 11.5935 1.58211C11.2969 1.71396 11.0696 2.10655 10.6151 2.89171Z\" stroke=\"#FF3838\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+      "label": "ft-listbox.erroreColonna"
+    },
+    {
+      "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"22\" height=\"22\" viewBox=\"0 0 22 20\" fill=\"none\"><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M21 10.0857V11.0057C20.9988 13.1621 20.3005 15.2604 19.0093 16.9875C17.7182 18.7147 15.9033 19.9782 13.8354 20.5896C11.7674 21.201 9.55726 21.1276 7.53447 20.3803C5.51168 19.633 3.78465 18.2518 2.61096 16.4428C1.43727 14.6338 0.879791 12.4938 1.02168 10.342C1.16356 8.19029 1.99721 6.14205 3.39828 4.5028C4.79935 2.86354 6.69279 1.72111 8.79619 1.24587C10.8996 0.770634 13.1003 0.988061 15.07 1.86572M21 3L11 13.01L8 10.01\" stroke=\"#00BF35\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+      "label": "ft-listbox.createReport"
+    },
+    {
+      "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"22\" height=\"20\" viewBox=\"0 0 22 20\" fill=\"none\"><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M4 9V6C4 3.23858 6.23858 1 9 1C11.419 1 13.4367 2.71776 13.9 5M5.8 19H12.2C13.8802 19 14.7202 19 15.362 18.673C15.9265 18.3854 16.3854 17.9265 16.673 17.362C17 16.7202 17 15.8802 17 14.2V13.8C17 12.1198 17 11.2798 16.673 10.638C16.3854 10.0735 15.9265 9.6146 15.362 9.32698C14.7202 9 13.8802 9 12.2 9H5.8C4.11984 9 3.27976 9 2.63803 9.32698C2.07354 9.6146 1.6146 10.0735 1.32698 10.638C1 11.2798 1 12.1198 1 13.8V14.2C1 15.8802 1 16.7202 1.32698 17.362C1.6146 17.9265 2.07354 18.3854 2.63803 18.673C3.27976 19 4.11984 19 5.8 19Z\" stroke=\"#8B8B8B\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+      "label": "ft-listbox.sbloccaConnettore"
+    },
+    {
+      "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"20\" viewBox=\"0 0 22 20\" fill=\"none\"><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M20.7003 14.1181C20.8939 13.616 21 13.0704 21 12.5C21 10.1564 19.2085 8.23129 16.9203 8.01937C16.4522 5.17213 13.9798 3 11 3C10.5534 3 10.1183 3.04879 9.69953 3.14132M6.28746 5.28585C5.67317 6.06419 5.24759 6.99838 5.07974 8.01937C2.79151 8.23129 1 10.1564 1 12.5C1 14.9853 3.01472 17 5.5 17H16.5C16.9561 17 17.3963 16.9322 17.8112 16.806M2 1L20 19\" stroke=\"#8B8B8B\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+      "label": "ft-listbox.nonDisponibileLocation"
+    }
+  ],
+  "userProfile": {
+    "name": "Mark",
+    "surname": "Villiams",
+    "profile": {
+      "photoProfile": "../../../../../assets/img/profileImg.png",
+      "label": "../../../../../assets/img/bechange.png"
+    },
+    "info": {
+      "label": "Product Manager",
+      "location": "Atlante"
+    }
+  },
+  "cardLocations" : [
+    {
+      "isPresentImage" : true,
+      "icon"  : "chart-breakout-circle",
+      "header"  : "ft-card.headerTariffe",
+      "fields" : "ft-card.fieldsTariffe",
+      "disabled" : false
+    },
+    {
+      "isPresentImage" : true,
+      "icon"  : "git-branch",
+      "header"  : "ft-card.headerImpianti",
+      "fields" : "ft-card.fieldsTariffe",
+      "disabled" : true
+    }
+  ],
+  "filterLocations" : [
+    {
+      "label" : "Paese",
+      "filter" : "",
+      "placeholder" : "ft-filters.filterPlaceholder.Paese",
+      "value" : [
+        {
+          "label":"Italia",
+          "value":"IT"
+        },
+        {
+          "label":"Germania",
+          "value":"TE"
+        },
+        {
+          "label":"Svizzera",
+          "value":"SV"
+        },
+        {
+          "label":"Francia",
+          "value":"FR"
+        },
+        {
+          "label":"Australia",
+          "value":"AU"
+        }
+      ]
+    },
+    {
+      "label" : "Regione",
+      "filter" : "",
+      "placeholder" : "ft-filters.filterPlaceholder.Regione",
+      "value" : [
+        {
+          "label":"Abruzzo",
+          "value":"AB"
+        },
+        {
+          "label":"Sicilia",
+          "value":"SI"
+        },
+        {
+          "label":"Lombardia",
+          "value":"LO"
+        },
+        {
+          "label":"Trenito Alto Adice",
+          "value":"TR"
+        },
+        {
+          "label":"Emilia Romagna",
+          "value":"ER"
+        }
+      ]
+    },
+    {
+      "label" : "Provincia",
+      "filter" : "",
+      "placeholder" : "ft-filters.filterPlaceholder.Provincia",
+      "value" : [
+        {
+          "label":"Roma",
+          "value":"Rom"
+        },
+        {
+          "label":"Rimini",
+          "value":"Rim"
+        },
+        {
+          "label":"Rieti",
+          "value":"Rie"
+        },
+        {
+          "label":"Rivoli",
+          "value":"Riv"
+        }
+      ]
+    },
+    {
+      "label" : "Comune",
+      "filter" : "",
+      "placeholder" : "ft-filters.filterPlaceholder.Comune",
+      "value" : [
+        {
+          "label":"Riccione",
+          "value":"Ric"
+        },
+        {
+          "label":"Cattolica",
+          "value":"Cat"
+        },
+        {
+          "label":"Cesena",
+          "value":"Ces"
+        }
+      ]
+    },
+    {
+      "label" : "Tariffa",
+      "filter" : "",
+      "placeholder" : "ft-filters.filterPlaceholder.Tariffa",
+      "value" : []
+    },
+    {
+      "label" : "Potenza",
+      "filter" : "",
+      "placeholder" : "",
+      "value" : []
+    },
+    {
+      "label" : "Connettore",
+      "filter" : "",
+      "placeholder" : "ft-filters.filterPlaceholder.Connettore",
+      "value" : []
+    }
+  ],
+  "tableLocation" : {
+    "columns" : [
+      {
+        "header": "Selezionato",
+        "field:" : "selected"
+      },
+      {
+        "header" : "Sito ",
+        "field" : "website"
+      },
+      {
+        "header" : "Citta",
+        "field" : "city"
+      },
+      {
+        "header" : "Sessioni in corso",
+        "field" : "session"
+      },
+      {
+        "header" : "Connetori",
+        "field" : "connector"
+      },
+      {
+        "header" : "Azioni",
+        "field" : "isOpen"
+      }
+    ],
+    "rows" : [
+      {
+        "selected" : false,
+        "website" : "Fortech - Misano World Circuit",
+        "city" : "Misano",
+        "session" : 2,
+        "connector" : 36,
+        "isOpen" : true
+      },
+      {
+        "selected" : false,
+        "website" : "Atlante - Ravenna",
+        "city" : "Ravenna",
+        "session" : "Nessuna" ,
+        "connector" :  36,
+        "isOpen" : true
+      },
+      {
+        "selected" : false,
+        "website" : "Atlante - Misano World Circuit",
+        "city" : "Misano ",
+        "session" : "Nessuna",
+        "connector" : 36,
+        "isOpen" : true
+      },
+      {
+        "selected" : false,
+        "website" : "Atlante - Misano World Circuit",
+        "city" : "Misano ",
+        "session" : 6,
+        "connector" : 36,
+        "isOpen" : true
+      },
+      {
+        "selected" : false,
+        "website" : "Atlante - Misano World Circuit",
+        "city" : "Misano ",
+        "session" : 6,
+        "connector" : 36,
+        "isOpen" : true
+      },
+      {
+        "selected" : false,
+        "website" : "Fortech - Ravenna ",
+        "city" : "Ravenna",
+        "session" : 2,
+        "connector" : 36,
+        "isOpen" : true
+      },
+      {
+        "selected" : false,
+        "website" : "Fortech - Misano World Circuit",
+        "city" : "Misano",
+        "session" : "Nessuna",
+        "connector" : 36,
+        "isOpen" : true
+      }
+    ]
+  }
+}
